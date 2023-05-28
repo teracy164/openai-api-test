@@ -14,5 +14,5 @@ cp -a .env.template .env
 # run
 
 ```shell
-npm rub dev
+npm run dev
 ```
