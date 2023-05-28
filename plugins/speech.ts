@@ -1,5 +1,3 @@
-import { Configuration, OpenAIApi } from 'openai';
-
 declare module '#app' {
   interface NuxtApp {
     $speech: SpeechAPI;
