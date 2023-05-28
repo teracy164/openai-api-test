@@ -16,3 +16,12 @@ cp -a .env.template .env
 ```shell
 npm run dev
 ```
+
+# deploy
+
+```shell
+npm run build
+
+# GitHub Pagesはmainブランチの/docsディレクトリを参照
+git push origin main
+```
