@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/openai-api-test/',
+    cdnURL: '/openai-api-test/',
   },
   runtimeConfig: {
     public: {
