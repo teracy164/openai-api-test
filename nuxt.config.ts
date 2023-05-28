@@ -1,3 +1,5 @@
+import path from 'path';
+
 const BASE_URL = process.env.APP_MODE === 'production' ? '/openai-api-test/' : '';
 console.log('base url', BASE_URL);
 
@@ -7,10 +9,14 @@ export default defineNuxtConfig({
     baseURL: BASE_URL,
     cdnURL: BASE_URL,
   },
-  buildDir: 'docs',
   runtimeConfig: {
     public: {
       openApiKey: process.env.OPENAI_API_KEY,
+    },
+  },
+  nitro: {
+    output: {
+      publicDir: path.join(__dirname, '/docs'),
     },
   },
 });
