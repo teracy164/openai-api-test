@@ -1,3 +1,6 @@
+console.log('===== env');
+console.log('base URL', process.env.BASE_URL);
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
