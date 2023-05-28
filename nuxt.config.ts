@@ -6,7 +6,8 @@ console.log('base url', BASE_URL);
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: BASE_URL,
+    // GitHubPagesがhttps://<username>.io/<repogitory>のため、baseURLを変更
+    // baseURL: BASE_URL,
     cdnURL: BASE_URL,
   },
   runtimeConfig: {
@@ -16,7 +17,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     output: {
-      publicDir: path.join(__dirname, '/docs/openai-api-test'),
+      // npm run generateの出力先を/docsに変更
+      publicDir: path.join(__dirname, '/docs'),
     },
   },
 });

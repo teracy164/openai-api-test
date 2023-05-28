@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "APP_MODE=production npm run generate",
+    "build": "APP_MODE=production npm run generate && mkdir ./docs/openai-api-test && mv ./docs/_nuxt ./docs/openai-api-test",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
