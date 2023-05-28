@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   app: {
     baseURL: process.env.BASE_URL,
+    cdnURL: process.env.BASE_URL,
   },
   runtimeConfig: {
     public: {
