@@ -1,4 +1,5 @@
 node_modules
+dist
 *.log*
 .nuxt
 .nitro
@@ -6,5 +7,4 @@ node_modules
 .output
 .env
 .DS_Store
-
 .env
