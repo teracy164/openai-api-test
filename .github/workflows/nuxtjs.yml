@@ -72,6 +72,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Create Env file
         run: echo -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}\\nBASE_URL=${{ secrets.BASE_URL }} >> .env
+      - name: Show Env file
+        run: cat .env
       - name: Static HTML export with Nuxt
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
